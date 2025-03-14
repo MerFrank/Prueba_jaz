@@ -1,0 +1,36 @@
+/con esto clonas el repositorio REMOTO en tu computadora
+git clone https://github.com/tu-usuario/tu-repositorio.git
+
+
+git init /Así inicias el seguimineto,  sólo se usa este comando al principio del proyecto
+
+    /Si no tienes configurado esta parte al iniciar el proyecto en git te pedira estos datos
+    /que tienes que llenar con los datos de tu cuenta de github
+    git config --global user.name "John Doe"
+    git config --global user.email johndoe@example.com
+
+
+git status /te muestra todos los archivos con cambios
+
+/Añede el archivo al proyecto de git, es decir que guarde o reatre los cambios en el archivo
+git add nombre_del_archivo
+
+git add . /con este Añades todos los archivos con cambios en la carpeta del proyecto
+
+git commit -m "Primer commit" /mandas los cambios al repositorio LOCAL
+                              / escribes un mensaje con los cambios que hicistes
+
+/con esto le dices al git a donde esta tu repositorio REMOTO
+/este comando sólo se hace la primera vez
+git remote add origin https://github.com/tu-usuario/tu-repositorio.git
+
+/Madar los cambios en el repositorio REMOTO
+git push origin nombre-de-la-rama
+                /Para mandar los cambios a la rama principal es en master
+
+/Para cambiar de rama en Git
+git checkout nombre-de-la-rama
+
+
+
+
